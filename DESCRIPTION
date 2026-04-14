@@ -1,0 +1,24 @@
+Package: rdu
+Title: Receipt Document Understanding
+Version: 0.0.0.9000
+Authors@R: 
+    person("Martijn", "Tennekes", , "m.tennekes@cbs.nl", role = c("aut", "cre"))
+Description: Understands the OCR output of photographed images of receipts.
+License: CBS
+Encoding: UTF-8
+Imports: 
+    optparse, 
+    readr, 
+    jpeg, 
+    grid, 
+    png, 
+    dplyr, 
+    tidyr, 
+    purrr,
+    yaml, 
+    cli, 
+    stringdist, 
+    jsonlite, 
+    lobstr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3

@@ -1,0 +1,383 @@
+AH:
+    detect_shop_required:
+      - "AANTAL"
+      - "OMSCHRIJVING"
+      - "PRIJS"
+      - "BEDRAG"
+      - "SUBTOTAAL"
+      - "TOTAAL"
+      - "VOORDEEL"
+      - "BONUS BOX"
+    detect_shop_unique:
+      - "Albert Heijn"
+      - "Vragen over je kassabon"
+      - "Onze kassamedewerkers"
+      - "helpen je graag"
+    chars_per_line:
+      std: 50
+      min: 70
+      max: 20
+    product_anchors:
+      - text: "AANTAL"
+        items_start: 1
+      - text: "OMSCHRIJVING"
+        items_start: 1
+      - text: "PRIJS"
+        items_start: 1
+      - text: "BEDRAG"
+        items_start: 1
+      - text: "SUBTOTAAL"
+        items_end: -1
+    products:
+      from: 0.19
+      to: 0.50
+    prices:
+      from: 0.62
+      to: 0.73
+    discount:
+      text: "B"
+      from: 0.75
+      to: 0.80
+      method: "link"
+    total_no_discount:
+      text: "SUBTOTAAL"
+      chars_per_line: 50
+      from: 0.19
+      to: 0.5
+    price_no_discount:
+      from: 0.5
+      to: 0.73
+    total_discount:
+      text: "TOTAAL"
+      chars_per_line: 25
+      from: 0.0
+      to: 0.15
+    price_discount:
+      from: 0.5
+      to: 0.73
+    skip:
+      - text: "STATIEGELD"
+        column: 0.20
+      - text: "Prijs per"
+        column: 0.19
+      - text: "BONUSKAART"
+        column: 0.19
+      - text: "BONUS NR"
+        column: 0.19
+      - text: "AIRMILES"
+        column: 0.19
+Aldi:
+    detect_shop_required:
+      - "ALDI"
+      - "TE BETALEN"
+      - "KLANTTICKET"
+    detect_shop_unique:
+      - "HARTELIJK DANK VOOR UW AANKOOP"
+      - "KASSA BEWIJST"
+      - "ALDI IS DE GOEDKOOPSTE"
+    chars_per_line:
+      std: 50
+      min: 60
+      max: 20
+    product_anchors:
+      - text: "ALDI"
+        items_start: 2
+      - text: "TE BETALEN"
+        items_end: -1
+    products:
+      from: 0.05
+      to: 0.6
+    prices:
+      from: 0.7
+      to: 0.85
+    discount:
+      method: "none"
+    total_discount:
+      text: "TE BETALEN"
+      chars_per_line: 50
+      from: 0.05
+      to: 0.16
+    price_discount:
+      from: 0.6
+      to: 0.9
+Hoogvliet:
+    detect_shop_required:
+      - "Hoogvliet"
+      - "Aant "
+      - "Omschrijving"
+      - "Prijs"
+      - "Bedrag"
+      - "Totaal"
+    detect_shop_unique:
+      - "Hoogvliet"
+    chars_per_line:
+      std: 50
+      min: 60
+      max: 20
+    product_anchors:
+      - text: "Aant"
+        items_start: 1
+      - text: "Omschrijving"
+        items_start: 1
+      - text: "Bedrag"
+        items_start: 1
+      - text: "Totaal"
+        items_end: -1
+      - text: "PINBETALING"
+        items_end: -2
+    products:
+      from: 0.1
+      to: 0.6
+    prices:
+      from: 0.7
+      to: 0.85
+    discount:
+      text: "KORTING"
+      from: 0.1
+      to: 0.5
+      method: "subtract"
+    total_discount:
+      text: "Totaal"
+      chars_per_line: 50
+      from: 0.1
+      to: 0.16
+    price_discount:
+      from: 0.6
+      to: 0.9
+    skip:
+      - text: "Jouw voordeel"
+        from: 0.1
+        to: 0.6
+Jumbo_kort:
+    detect_shop_required:
+      - "Bekijk het privacy statement op jumbo"
+      - "Aantal artikelen"
+      - "Betaald"
+    detect_shop_unique:
+    chars_per_line:
+      std: 50
+      min: 60
+      max: 20
+    product_anchors:
+      - text: "Bekijk het privacy statement op jumbo"
+        items_end: -1
+      - text: "Aantal artikelen"
+        items_end: -3
+    products:
+      from: 0.05
+      to: 0.6
+    prices:
+      from: 0.7
+      to: 0.85
+    discount:
+      text: "ACTIE"
+      from: 0.05
+      to: 0.6
+      method: "subtract"
+    total_discount:
+      text: "Totale bedrag"
+      chars_per_line: 50
+      from: 0.05
+      to: 0.16
+    price_discount:
+      from: 0.6
+      to: 0.9
+    skip:
+      - text: "STATIEGELD"
+        from: 0.05
+        to: 0.5
+Jumbo_lang:
+    detect_shop_required:
+      - "jumbo"
+      - "OMSCHRIJVING"
+      - "BEDRAG IN"
+      - "Totaal"
+      - "Betaald"
+    detect_shop_unique:
+      - "Jumbo Extra's Programma"
+      - "Gratis parkeren"
+    chars_per_line:
+      std: 50
+      min: 60
+      max: 20
+    product_anchors:
+      - text: "OMSCHRIJVING"
+        items_start: 1
+      - text: "BEDRAG IN"
+        items_start: 1
+      - text: "Totaal"
+        items_end: -1
+      - text: "Betaald"
+        items_end: -2
+    products:
+      from: 0.05
+      to: 0.6
+    prices:
+      from: 0.7
+      to: 0.85
+    discount:
+      text: "ACTIE"
+      from: 0.05
+      to: 0.6
+      method: "subtract"
+    total_discount:
+      text: "TE BETALEN"
+      chars_per_line: 50
+      from: 0.05
+      to: 0.16
+    price_discount:
+      from: 0.6
+      to: 0.9
+    skip:
+      - text: "STATIEGELD"
+        from: 0.05
+        to: 0.5
+Lidl:
+    detect_shop_required:
+      - "OMSCHRIJVING"
+      - "Aantal"
+      - "Totaal"
+      - "EUR"
+      - "art"
+    detect_shop_unique:
+      - "DANK U WEL EN GRAAG TOT ZIENS"
+      - "Bespaar meer met de Lidl Plus-app"
+    chars_per_line:
+      std: 50
+      min: 60
+      max: 20
+    product_anchors:
+      - text: "OMSCHRIJVING"
+        items_start: 1
+      - text: "Aantal"
+        items_end: -1
+      - text: "Totaal"
+        items_end: -2
+    products:
+      from: 0.03
+      to: 0.5
+    prices:
+      from: 0.75
+      to: 0.85
+    discount:
+      text: "Lidl Plus korting"
+      from: 0.03
+      to: 0.5
+      method: "subtract"
+    total_discount:
+      text: "Totaal"
+      chars_per_line: 30
+      from: 0.03
+      to: 0.30
+    price_discount:
+      from: 0.6
+      to: 0.9
+Plus:
+    detect_shop_required:
+      - "PLUS"
+      - "Goed eten"
+      - "Daar houden we van"
+      - "Omschrijving"
+      - "Bedrag"
+      - "Totaal"
+    detect_shop_unique:
+      - "DE TOTALE KORTING IS"
+    chars_per_line:
+      std: 50
+      min: 60
+      max: 20
+    product_anchors:
+      - text: "Omschrijving"
+        items_start: 1
+      - text: "Bedrag"
+        items_start: 1
+      - text: "Subtotaal"
+        items_end: -1
+      - text: "Totaal"
+        items_end: -1
+    products:
+      from: 0.125
+      to: 0.5
+    prices:
+      from: 0.65
+      to: 0.8
+    discount:
+      text: "Korting"
+      from: 0.175
+      to: 0.5
+      method: "subtract"
+    total_no_discount:
+      text: "Subtotaal"
+      chars_per_line: 28
+      from: 0.125
+      to: 0.5
+    price_no_discount:
+      from: 0.5
+      to: 0.8
+    total_discount:
+      text: "Totaal"
+      chars_per_line: 28
+      from: 0.125
+      to: 0.5
+    price_discount:
+      from: 0.5
+      to: 0.8
+    skip:
+      - text: "STATIEGELD"
+        from: 0.175
+        to: 0.5
+      - text: "Prijswijziging"
+        from: 0.175
+        to: 0.5
+      - text: "Inclusief korting"
+        from: 0.175
+        to: 0.5
+      - text: "Klant"
+        from: 0.01
+        to: 0.7
+      - text: "Digatale spaarkaart geregistreerd"
+        from: 0.01
+        to: 0.7
+Spar:
+    detect_shop_required:
+      - "spar"
+      - "Omschrijving"
+      - "Bedrag"
+      - "Subtotaal"
+      - "Totaal"
+    detect_shop_unique:
+      - "U bent geholpen door"
+    chars_per_line:
+      std: 50
+      min: 60
+      max: 20
+    product_anchors:
+      - text: "Omschrijving"
+        items_start: 2
+      - text: "Bedrag"
+        items_start: 2
+      - text: "Subtotaal"
+        items_end: -1
+    products:
+      from: 0.15
+      to: 0.6
+    prices:
+      from: 0.75
+      to: 0.85
+    discount:
+      text: "Actieprijs"
+      from: 0.15
+      to: 0.5
+      method: "nextline"
+    total_discount:
+      text: "Totaal"
+      chars_per_line: 50
+      from: 0.05
+      to: 0.16
+    price_discount:
+      from: 0.6
+      to: 0.9
+    skip:
+      - text: "Statiegeld"
+        from: 0.15
+        to: 0.6

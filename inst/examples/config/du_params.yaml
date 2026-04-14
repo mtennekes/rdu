@@ -1,0 +1,20 @@
+chars_per_line: 
+  std: 50
+  min: 70
+  max: 10
+match_tolerance_required: 2
+match_tolerance_unique: 1
+anchor_tolerance: 3
+discount_tolerance: 3
+discount_pos_diff: 0.1
+products_pos_diff: 0.1
+skip_tolerance: 3
+price_pos_diff: 0.1
+total_weights:
+  cpl: 1
+  dist: 5
+  pos: 150
+total_tolerance:
+  cpl: 15
+  dist: 3
+  pos: 0.1
