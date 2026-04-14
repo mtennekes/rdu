@@ -1,5 +1,5 @@
-file_image = system.file("examples/inputs/bonnetje_plus.png", package = "rdu")
-file_OCR = system.file("examples/inputs/bonnetje_plus.tsv", package = "rdu")
+file_image = system.file("examples/inputs/receipt_plus.png", package = "rdu")
+file_OCR = system.file("examples/inputs/receipt_plus.tsv", package = "rdu")
 params = yaml::read_yaml(system.file("examples/config/du_params.yaml", package = "rdu"))
 templates = yaml::read_yaml(system.file("examples/config/templates.yaml", package = "rdu"))
 
