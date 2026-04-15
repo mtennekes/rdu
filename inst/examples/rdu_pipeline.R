@@ -16,4 +16,4 @@ r = rdu_init(file_image = file_image, file_OCR = file_OCR, shop = NA, total_disc
   rdu_extract_table(templates, params) |>
   rdu_process_table() |>
   rdu_check_table() |>
-  rdu_write(file = "output.json", include_throughput = TRUE)
+  rdu_write(file = "output.json", include_throughput = FALSE)
